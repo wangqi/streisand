@@ -38,7 +38,7 @@
     aws_access_key: "{{ aws_access_key }}"
     aws_secret_key: "{{ aws_secret_key }}"
     # create customized instance type wangqi 2016-10-18
-    instance_type: "{{ aws_instance_type_var }}"
+    instance_type: "{{ instances[aws_instance_type_var] }}"
     image: "{{ ami.results[0].ami_id }}"
     region: "{{ aws_region }}"
     vpc_subnet_id: "{{ aws_vpc_subnet_id | default(omit) }}"

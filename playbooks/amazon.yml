@@ -18,6 +18,10 @@
       "9": "us-east-1"
       "10": "us-west-1"
       "11": "us-west-2"
+    instances:
+      "1": "m3.xlarge"
+      "2": "m4.xlarge"
+      "3": "t2.micro"
 
   # These variable files are included so the ec2-security-group role
   # knows which ports to open
