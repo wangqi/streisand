@@ -21,6 +21,12 @@
     proto: "tcp"
     rule: "allow"
 
+- name: Ensure UFW allows PPTP
+  ufw:
+    to_port: "1723"
+    proto: "tcp"
+    rule: "allow"
+
 - name: Ensure UFW is enabled and denies by default
   ufw:
     state: "enabled"
@@ -36,6 +42,7 @@
     - "500"
     - "1701"
     - "4500"
+    - "1723"
 
 - name: Ensure UFW allows nginx
   ufw:

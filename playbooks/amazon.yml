@@ -50,6 +50,16 @@
       default: "3"
       private: no
 
+    - name: "aws_instance_type_var"
+      prompt: |
+        In what region should the server be located?
+          1. m3.xlarge
+          2. m4.xlarge
+          3. t2.micro
+        Please choose the type of your instance. Press enter for default (#2) type.
+      default: "2"
+      private: no
+
     - name: "aws_vpc_id_var"
       prompt: |
 

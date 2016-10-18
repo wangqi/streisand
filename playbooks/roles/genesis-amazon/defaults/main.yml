@@ -1,5 +1,7 @@
 ---
-aws_instance_type: "t2.micro"
+# Use the type from selection. wangqi 2016-10-18
+#aws_instance_type: "t2.micro"
+aws_instance_type: "{{ aws_instance_type_var }}"
 # Search AMIs owned by this owner. This is the Amazon owner ID.
 aws_ami_owner: "099720109477"
 # Find AMIs matching this name
